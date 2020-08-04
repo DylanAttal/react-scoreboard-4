@@ -11,8 +11,7 @@ export const Team = (props) => {
   }
 
   const handleTeamNameClick = () => {
-    setTeamName(newTeamName)
-    setNewTeamName('')
+    props.updateTeamName(newTeamName, props.index)
   }
 
   const handleAddPoint = () => {
